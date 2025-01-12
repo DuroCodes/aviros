@@ -25,7 +25,7 @@ object ModBlocks {
             UniformInt.of(2, 5),
             BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(
                 ResourceKey.create(
-                    Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "skyrite_block")
+                    Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "skyrite_ore")
                 )
             )
         )
@@ -37,7 +37,7 @@ object ModBlocks {
             BlockBehaviour.Properties.of().strength(4.5f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)
                 .setId(
                     ResourceKey.create(
-                        Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "skyrite_block")
+                        Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "deepslate_skyrite_ore")
                     )
                 )
         )
