@@ -14,48 +14,36 @@ import net.minecraft.world.level.block.SoundType
 import net.minecraft.world.level.block.state.BlockBehaviour
 import net.neoforged.bus.api.IEventBus
 import net.neoforged.neoforge.registries.DeferredBlock
-import net.neoforged.neoforge.registries.DeferredItem
 import net.neoforged.neoforge.registries.DeferredRegister
-import java.util.function.Supplier
 
 object ModBlocks {
     val REGISTRY: DeferredRegister.Blocks = DeferredRegister.createBlocks(Aviros.MOD_ID)
 
-    val SKYRITE_BLOCK = registerBlock("skyrite_block") {
-        Block(
-            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL).setId(
-                ResourceKey.create(
-                    Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "deepslate_skyrite_ore")
-                )
-            )
-        )
-    }
+    val SKYRITE_BLOCK = registerBlock(
+        "skyrite_block",
+        BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)
+    ) { Block(it) }
 
-    val SKYRITE_ORE = registerBlock("skyrite_ore") {
-        DropExperienceBlock(
-            UniformInt.of(2, 5),
-            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(
-                ResourceKey.create(
-                    Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "deepslate_skyrite_ore")
-                )
-            )
-        )
-    }
+    val SKYRITE_ORE = registerBlock(
+        "skyrite_ore", BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+    ) { DropExperienceBlock(UniformInt.of(2, 5), it) }
 
-    val DEEPSLATE_SKYRITE_ORE = registerBlock("deepslate_skyrite_ore") {
-        DropExperienceBlock(
-            UniformInt.of(2, 5),
-            BlockBehaviour.Properties.of().strength(4.5f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)
-                .setId(
-                    ResourceKey.create(
-                        Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "deepslate_skyrite_ore")
-                    )
-                )
-        )
-    }
+    val DEEPSLATE_SKYRITE_ORE = registerBlock(
+        "deepslate_skyrite_ore",
+        BlockBehaviour.Properties.of().strength(4.5f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)
+    ) { DropExperienceBlock(UniformInt.of(2, 5), it) }
 
-    private fun <T : Block> registerBlock(name: String, block: Supplier<T>): DeferredBlock<T> =
-        REGISTRY.register(name, block).also { registerBlockItem(name, it) }
+    private fun addProperties(name: String, properties: BlockBehaviour.Properties) = properties.setId(
+        ResourceKey.create(
+            Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, name)
+        )
+    )
+
+    private fun registerBlock(
+        name: String, properties: BlockBehaviour.Properties, blockFactory: (BlockBehaviour.Properties) -> Block
+    ) = REGISTRY.register(name) { -> blockFactory(addProperties(name, properties)) }.also {
+        registerBlockItem(name, it)
+    }
 
     private fun <T : Block> registerBlockItem(name: String, block: DeferredBlock<T>) =
         ModItems.REGISTRY.register(name) { ->
