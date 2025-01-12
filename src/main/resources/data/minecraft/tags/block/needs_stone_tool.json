@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "aviros:skyrite_ore",
+    "aviros:deepslate_skyrite_ore",
+    "aviros:skyrite_block"
+  ]
+}

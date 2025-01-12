@@ -12,5 +12,6 @@
   "item.aviros.skyrite_boots": "Skyrite Boots",
   "block.aviros.skyrite_ore": "Skyrite Ore",
   "block.aviros.deepslate_skyrite_ore": "Deepslate Skyrite Ore",
-  "block.aviros.skyrite_block": "Block of Skyrite"
+  "block.aviros.skyrite_block": "Block of Skyrite",
+  "creativetab.aviros.aviros_items": "Aviros"
 }

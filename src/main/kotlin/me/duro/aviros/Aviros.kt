@@ -41,8 +41,6 @@ object Aviros {
             })
 
         println(obj)
-
-        MOD_BUS.addListener(::addCreativeTab)
     }
 
     private fun onClientSetup(event: FMLClientSetupEvent) {
@@ -56,27 +54,5 @@ object Aviros {
     @SubscribeEvent
     fun onCommonSetup(event: FMLCommonSetupEvent) {
         LOGGER.log(Level.INFO, "Hello! This is working!")
-    }
-
-    private fun addCreativeTab(event: BuildCreativeModeTabContentsEvent) {
-        when (event.tabKey) {
-            CreativeModeTabs.BUILDING_BLOCKS -> {
-                event.accept(ModBlocks.SKYRITE_ORE)
-                event.accept(ModBlocks.DEEPSLATE_SKYRITE_ORE)
-                event.accept(ModBlocks.SKYRITE_BLOCK)
-            }
-
-            CreativeModeTabs.INGREDIENTS -> {
-                event.accept(ModItems.SKYRITE)
-            }
-
-            CreativeModeTabs.COMBAT -> {
-                event.accept(ModItems.SKYRITE_AXE)
-                event.accept(ModItems.SKYRITE_HOE)
-                event.accept(ModItems.SKYRITE_PICKAXE)
-                event.accept(ModItems.SKYRITE_SHOVEL)
-                event.accept(ModItems.SKYRITE_SWORD)
-            }
-        }
     }
 }

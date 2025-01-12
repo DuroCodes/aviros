@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "aviros:skyrite"
+    }
+  },
+  "pattern": ["###", "###", "###"],
+  "result": {
+    "count": 1,
+    "item": "aviros:skyrite_block"
+  }
+}
