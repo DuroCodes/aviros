@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "aviros:item/skyrite"
+    "layer0": "aviros:item/skyrite_chestplate"
   }
 }

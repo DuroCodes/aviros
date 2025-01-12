@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "aviros:block/deepslate_skyrite_block"
+    "all": "aviros:block/deepslate_skyrite_ore"
   }
 }

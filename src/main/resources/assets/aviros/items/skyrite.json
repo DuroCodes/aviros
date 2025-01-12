@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "aviros:item/skyrite"
+  "model": {
+    "type": "minecraft:model",
+    "model": "aviros:item/skyrite"
   }
 }

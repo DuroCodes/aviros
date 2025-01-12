@@ -1,5 +1,16 @@
 {
-  "itemGroup.aviros": "Example Mod Tab",
-  "block.aviros.example_block": "Example Block",
-  "item.aviros.example_item": "Example Item"
+  "itemGroup.aviros": "Aviros",
+  "item.aviros.skyrite": "Skyrite",
+  "item.aviros.skyrite_axe": "Skyrite Axe",
+  "item.aviros.skyrite_hoe": "Skyrite Sword",
+  "item.aviros.skyrite_pickaxe": "Skyrite Pickaxe",
+  "item.aviros.skyrite_shovel": "Skyrite Shovel",
+  "item.aviros.skyrite_sword": "Skyrite Sword",
+  "item.aviros.skyrite_helmet": "Skyrite Helmet",
+  "item.aviros.skyrite_chestplate": "Skyrite Chestplate",
+  "item.aviros.skyrite_leggings": "Skyrite Leggings",
+  "item.aviros.skyrite_boots": "Skyrite Boots",
+  "block.aviros.skyrite_ore": "Skyrite Ore",
+  "block.aviros.deepslate_skyrite_ore": "Deepslate Skyrite Ore",
+  "block.aviros.skyrite_block": "Block of Skyrite"
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "aviros:block/skyrite_ore"
+      "model": "aviros:block/deepslate_skyrite_ore"
     }
   }
 }
