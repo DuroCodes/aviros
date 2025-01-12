@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.25,
-  "ingredient": {
-    "item": "aviros:deepslate_skyrite_ore"
-  },
+  "ingredient": [
+    "aviros:deepslate_skyrite_ore"
+  ],
   "result": {
     "count": 1,
     "id": "aviros:skyrite"
