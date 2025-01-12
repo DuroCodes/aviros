@@ -23,14 +23,22 @@ object ModBlocks {
 
     val SKYRITE_BLOCK = registerBlock("skyrite_block") {
         Block(
-            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL).setId(
+                ResourceKey.create(
+                    Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "deepslate_skyrite_ore")
+                )
+            )
         )
     }
 
     val SKYRITE_ORE = registerBlock("skyrite_ore") {
         DropExperienceBlock(
             UniformInt.of(2, 5),
-            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE).setId(
+                ResourceKey.create(
+                    Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "deepslate_skyrite_ore")
+                )
+            )
         )
     }
 
@@ -38,18 +46,16 @@ object ModBlocks {
         DropExperienceBlock(
             UniformInt.of(2, 5),
             BlockBehaviour.Properties.of().strength(4.5f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)
+                .setId(
+                    ResourceKey.create(
+                        Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "deepslate_skyrite_ore")
+                    )
+                )
         )
     }
 
     private fun <T : Block> registerBlock(name: String, block: Supplier<T>): DeferredBlock<T> =
-        REGISTRY.register(name, block.apply {
-            get().properties().setId(
-                ResourceKey.create(
-                    Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, name)
-                )
-            )
-        }).also { registerBlockItem(name, it) }
-
+        REGISTRY.register(name, block).also { registerBlockItem(name, it) }
 
     private fun <T : Block> registerBlockItem(name: String, block: DeferredBlock<T>) =
         ModItems.REGISTRY.register(name) { ->
