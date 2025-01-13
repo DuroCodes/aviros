@@ -2,10 +2,9 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,
-  "experience": 0.25,
-  "ingredient": [
-    "aviros:deepslate_skyrite_ore"
-  ],
+  "experience": 0.7,
+  "group": "skyrite",
+  "ingredient": "aviros:skyrite_ore",
   "result": {
     "count": 1,
     "id": "aviros:skyrite"

@@ -25,6 +25,10 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 kotlin.jvmToolchain(21)
 
+tasks.named('processResources') {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
@@ -62,7 +66,7 @@ neoForge {
         }
 
         data {
-                clientData()
+            clientData()
 
             // example of overriding the workingDirectory set in configureEach above, uncomment if you want to use it
             // gameDirectory = project.file('run-data')

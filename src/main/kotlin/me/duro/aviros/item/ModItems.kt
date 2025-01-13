@@ -17,11 +17,11 @@ object ModItems {
     val REGISTRY: DeferredRegister.Items = DeferredRegister.createItems(Aviros.MOD_ID)
 
     val SKYRITE = registerItem("skyrite") { Item(it) }
-    val SKYRITE_SWORD = registerItem("skyrite_sword") { SwordItem(ModToolMaterials.SKYRITE, 5f, -2.4f, it) }
-    val SKYRITE_AXE = registerItem("skyrite_axe") { AxeItem(ModToolMaterials.SKYRITE, 9f, -3.1f, it) }
-    val SKYRITE_SHOVEL = registerItem("skyrite_shovel") { ShovelItem(ModToolMaterials.SKYRITE, 5f, -3.0f, it) }
-    val SKYRITE_HOE = registerItem("skyrite_hoe") { HoeItem(ModToolMaterials.SKYRITE, -3f, 0f, it) }
-    val SKYRITE_PICKAXE = registerItem("skyrite_pickaxe") { PickaxeItem(ModToolMaterials.SKYRITE, 4f, -2.8f, it) }
+    val SKYRITE_SWORD = registerItem("skyrite_sword") { SwordItem(ModToolMaterials.SKYRITE, 3f, -2.4f, it) }
+    val SKYRITE_AXE = registerItem("skyrite_axe") { AxeItem(ModToolMaterials.SKYRITE, 6f, -3.1f, it) }
+    val SKYRITE_SHOVEL = registerItem("skyrite_shovel") { ShovelItem(ModToolMaterials.SKYRITE, 1.5f, -3.0f, it) }
+    val SKYRITE_HOE = registerItem("skyrite_hoe") { HoeItem(ModToolMaterials.SKYRITE, -2f, -1f, it) }
+    val SKYRITE_PICKAXE = registerItem("skyrite_pickaxe") { PickaxeItem(ModToolMaterials.SKYRITE, 1f, -2.8f, it) }
     val SKYRITE_HELMET = registerItem("skyrite_helmet") { Item(it) }
     val SKYRITE_CHESTPLATE = registerItem("skyrite_chestplate") { Item(it) }
     val SKYRITE_LEGGINGS = registerItem("skyrite_leggings") { Item(it) }

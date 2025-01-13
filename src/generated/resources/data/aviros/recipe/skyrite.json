@@ -2,12 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    [
-      "aviros:skyrite_block"
-    ]
+    "aviros:skyrite_block"
   ],
   "result": {
-    "id": "aviros:skyrite",
-    "count": 9
+    "count": 9,
+    "id": "aviros:skyrite"
   }
 }

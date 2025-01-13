@@ -1,18 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "key": {
+    "#": "aviros:skyrite_ore"
+  },
   "pattern": [
     "###",
     "###",
     "###"
   ],
-  "key": {
-    "#": [
-      "aviros:skyrite"
-    ]
-  },
   "result": {
-    "id": "aviros:skyrite_block",
-    "count": 1
+    "count": 1,
+    "id": "aviros:skyrite_block"
   }
 }

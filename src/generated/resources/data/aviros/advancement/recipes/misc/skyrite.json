@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_skyrite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aviros:skyrite_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aviros:skyrite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_skyrite_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aviros:skyrite"
+    ]
+  }
+}
