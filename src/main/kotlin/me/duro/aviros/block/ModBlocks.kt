@@ -33,15 +33,15 @@ object ModBlocks {
         BlockBehaviour.Properties.of().strength(4.5f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)
     ) { DropExperienceBlock(UniformInt.of(2, 5), it) }
 
-    private fun addProperties(name: String, properties: BlockBehaviour.Properties) = properties.setId(
+    private fun addResourceKey(name: String, properties: BlockBehaviour.Properties) = properties.setId(
         ResourceKey.create(
             Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, name)
         )
     )
 
     private fun registerBlock(
-        name: String, properties: BlockBehaviour.Properties, blockFactory: (BlockBehaviour.Properties) -> Block
-    ) = REGISTRY.register(name) { -> blockFactory(addProperties(name, properties)) }.also {
+        name: String, properties: BlockBehaviour.Properties, block: (BlockBehaviour.Properties) -> Block
+    ) = REGISTRY.register(name) { -> block(addResourceKey(name, properties)) }.also {
         registerBlockItem(name, it)
     }
 
