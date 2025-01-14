@@ -78,11 +78,11 @@ object ModBlocks {
     ) { FenceGateBlock(WoodType.OAK, it) }
 
     val JYNWOOD_DOOR = registerBlock(
-        "jynwood_door", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)
+        "jynwood_door", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_DOOR)
     ) { DoorBlock(BlockSetType.OAK, it) }
 
     val JYNWOOD_TRAPDOOR = registerBlock(
-        "jynwood_trapdoor", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)
+        "jynwood_trapdoor", BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_TRAPDOOR)
     ) { TrapDoorBlock(BlockSetType.OAK, it) }
 
     val JYNWOOD_PRESSURE_PLATE = registerBlock(

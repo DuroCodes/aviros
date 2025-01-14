@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/door_bottom_right",
+  "render_type": "cutout",
   "textures": {
     "bottom": "aviros:block/jynwood_door_bottom",
     "top": "aviros:block/jynwood_door_top"

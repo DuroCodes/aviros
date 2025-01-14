@@ -22,7 +22,7 @@ class ModModelProvider(output: PackOutput) : ModelProvider(output, Aviros.MOD_ID
         blockModels.woodProvider(ModBlocks.STRIPPED_JYNWOOD_LOG.get()).log(ModBlocks.STRIPPED_JYNWOOD_LOG.get())
             .wood(ModBlocks.STRIPPED_JYNWOOD_WOOD.get())
         blockModels.createTrivialBlock(ModBlocks.JYNWOOD_LEAVES.get(), TexturedModel.LEAVES)
-        blockModels.createCrossBlockWithDefaultItem(ModBlocks.JYNWOOD_SAPLING.get(), BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModels.createCrossBlockWithDefaultItem(ModBlocks.JYNWOOD_SAPLING.get(), BlockModelGenerators.PlantType.NOT_TINTED)
         blockModels.family(ModBlocks.JYNWOOD_PLANKS.get()).fence(ModBlocks.JYNWOOD_FENCE.get())
             .fenceGate(ModBlocks.JYNWOOD_FENCE_GATE.get()).button(ModBlocks.JYNWOOD_BUTTON.get())
             .stairs(ModBlocks.JYNWOOD_STAIRS.get()).slab(ModBlocks.JYNWOOD_SLAB.get())
