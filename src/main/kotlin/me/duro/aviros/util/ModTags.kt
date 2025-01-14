@@ -10,12 +10,15 @@ object ModTags {
         val NEEDS_SKYRITE_TOOL = createTag("needs_skyrite_tool")
         val INCORRECT_SKYRITE_TOOL = createTag("incorrect_skyrite_tool")
 
-        fun createTag(name: String) = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, name))
+        private fun createTag(name: String) =
+            BlockTags.create(ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, name))
     }
 
     object Items {
         val SKYRITE_TOOL_MATERIALS = createTag("skyrite_tool_materials")
+        val SKYRITE_REPAIR = createTag("skyrite_repair")
 
-        fun createTag(name: String) = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, name))
+        private fun createTag(name: String) =
+            ItemTags.create(ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, name))
     }
 }

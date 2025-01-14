@@ -1,3 +1,5 @@
-// 1.21.4	2025-01-13T16:50:25.790601	Tags for minecraft:block mod id aviros
+// 1.21.4	2025-01-13T21:33:27.658946	Tags for minecraft:block mod id aviros
+a691f8e76f5b8dfd7728773095889ca0312ea96e data/aviros/tags/block/incorrect_skyrite_tool.json
+781d959bb6bbea7b36ae6b2d4a71ced43fd662b9 data/aviros/tags/block/needs_skyrite_tool.json
 b8bcda17d3074255d8ae8d958a37b834281f11ec data/minecraft/tags/block/mineable/pickaxe.json
 b8bcda17d3074255d8ae8d958a37b834281f11ec data/minecraft/tags/block/needs_stone_tool.json

@@ -23,8 +23,11 @@ object DataGenerators {
             )
         )
 
-        generator.addProvider(true, ModBlockTagProvider(packOutput, lookupProvider))
         generator.addProvider(true, ModRecipeProvider.Runner(packOutput, lookupProvider))
         generator.addProvider(true, ModModelProvider(packOutput))
+
+        val blockTags = ModBlockTagProvider(packOutput, lookupProvider)
+        generator.addProvider(true, blockTags)
+        generator.addProvider(true, ModItemTagProvider(packOutput, lookupProvider, blockTags.contentsGetter()))
     }
 }

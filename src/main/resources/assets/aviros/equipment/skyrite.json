@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "aviros:skyrite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "aviros:skyrite"
+      }
+    ]
+  }
+}

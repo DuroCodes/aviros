@@ -13,7 +13,6 @@ import net.minecraft.world.item.crafting.RecipeSerializer
 import net.minecraft.world.level.ItemLike
 import java.util.concurrent.CompletableFuture
 
-
 class ModRecipeProvider(lookupProvider: HolderLookup.Provider, output: RecipeOutput) :
     RecipeProvider(lookupProvider, output) {
     override fun buildRecipes() {

@@ -8,6 +8,7 @@ import net.minecraft.client.data.models.ItemModelGenerators
 import net.minecraft.client.data.models.ModelProvider
 import net.minecraft.client.data.models.model.ModelTemplates
 import net.minecraft.data.PackOutput
+import net.minecraft.world.item.equipment.EquipmentAssets
 
 class ModModelProvider(output: PackOutput) : ModelProvider(output, Aviros.MOD_ID) {
     override fun registerModels(blockModels: BlockModelGenerators, itemModels: ItemModelGenerators) {
@@ -22,9 +23,9 @@ class ModModelProvider(output: PackOutput) : ModelProvider(output, Aviros.MOD_ID
         itemModels.generateFlatItem(ModItems.SKYRITE_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM)
         itemModels.generateFlatItem(ModItems.SKYRITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM)
 
-        itemModels.generateFlatItem(ModItems.SKYRITE_HELMET.get(), ModelTemplates.FLAT_ITEM)
-        itemModels.generateFlatItem(ModItems.SKYRITE_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM)
-        itemModels.generateFlatItem(ModItems.SKYRITE_LEGGINGS.get(), ModelTemplates.FLAT_ITEM)
-        itemModels.generateFlatItem(ModItems.SKYRITE_BOOTS.get(), ModelTemplates.FLAT_ITEM)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_HELMET.get(), EquipmentAssets.IRON, "helmet", false)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_CHESTPLATE.get(), EquipmentAssets.IRON, "chestplate", false)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_LEGGINGS.get(), EquipmentAssets.IRON, "leggings", false)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_BOOTS.get(), EquipmentAssets.IRON, "boots", false)
     }
 }
