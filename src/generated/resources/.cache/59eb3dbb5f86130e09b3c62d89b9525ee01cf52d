@@ -1,4 +1,19 @@
-// 1.21.4	2025-01-13T21:33:27.658766	Loot Tables
+// 1.21.4	2025-01-14T16:53:37.353348	Loot Tables
 38e95d7cbb3d2f6e0aa19aed0ccbe84877fec635 data/aviros/loot_table/blocks/deepslate_skyrite_ore.json
+36b17a71c76e89f718fa4e71bde0d2232e210f3f data/aviros/loot_table/blocks/jynwood_button.json
+056055dfe3dd8b83369e239d15e17d48b0f2be3e data/aviros/loot_table/blocks/jynwood_door.json
+ab9e5c508a66d7483c56a225f9952d75e53abe88 data/aviros/loot_table/blocks/jynwood_fence.json
+d163c0255ff8f18de22cad0d5b4f0e0385b4d389 data/aviros/loot_table/blocks/jynwood_fence_gate.json
+ead26b3051d6668d239c95b4f4bbd562f8c4c47b data/aviros/loot_table/blocks/jynwood_leaves.json
+aa283d7106aa81f4298e0dd277b88e9338459521 data/aviros/loot_table/blocks/jynwood_log.json
+22593f14d261e0cc4da25aae317ba72348ae4bad data/aviros/loot_table/blocks/jynwood_planks.json
+a7e9ce598d0f2e072f775e5aa5b79ca711bb4f1b data/aviros/loot_table/blocks/jynwood_pressure_plate.json
+01b49d293dcc5639a8d77d79ec9212ebf9e94b03 data/aviros/loot_table/blocks/jynwood_sapling.json
+597cf2d829bb56594795afe4f1be006be500cb70 data/aviros/loot_table/blocks/jynwood_slab.json
+68e3454ed5c68efb407c27d7fd4e266f73b31213 data/aviros/loot_table/blocks/jynwood_stairs.json
+b8c659f5d9e5c914d4784905b6c4d728a2fa82ed data/aviros/loot_table/blocks/jynwood_trapdoor.json
+6bfe5a1e087ac738effd2e9932263edd5af76dec data/aviros/loot_table/blocks/jynwood_wood.json
 bb731d54ec96c3507f6b9bac77a5841cf650033e data/aviros/loot_table/blocks/skyrite_block.json
 af47d4d8dc09a1e4689c753c1c00c000ecc4d4e2 data/aviros/loot_table/blocks/skyrite_ore.json
+e85ca762cb70fe584b285dcabe030c28bbd25b0b data/aviros/loot_table/blocks/stripped_jynwood_log.json
+6cdc50ff2b01212c92a6fe0c3b47ebf4c0066444 data/aviros/loot_table/blocks/stripped_jynwood_wood.json

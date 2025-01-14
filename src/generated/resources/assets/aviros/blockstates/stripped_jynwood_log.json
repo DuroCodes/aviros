@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "aviros:block/stripped_jynwood_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "aviros:block/stripped_jynwood_log"
+    },
+    "axis=z": {
+      "model": "aviros:block/stripped_jynwood_log",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "aviros:block/jynwood_planks",
+    "side": "aviros:block/jynwood_planks",
+    "top": "aviros:block/jynwood_planks"
+  }
+}

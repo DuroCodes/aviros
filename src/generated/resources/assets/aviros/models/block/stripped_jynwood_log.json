@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "aviros:block/stripped_jynwood_log_top",
+    "side": "aviros:block/stripped_jynwood_log"
+  }
+}

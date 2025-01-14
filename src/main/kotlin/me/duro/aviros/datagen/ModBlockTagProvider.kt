@@ -22,5 +22,24 @@ class ModBlockTagProvider(
         tag(ModTags.Blocks.NEEDS_SKYRITE_TOOL).addTags(BlockTags.NEEDS_STONE_TOOL)
         tag(ModTags.Blocks.INCORRECT_SKYRITE_TOOL).addTags(BlockTags.INCORRECT_FOR_STONE_TOOL)
             .remove(ModTags.Blocks.NEEDS_SKYRITE_TOOL)
+
+        tag(BlockTags.LOGS_THAT_BURN).add(
+            ModBlocks.JYNWOOD_LOG.get(),
+            ModBlocks.JYNWOOD_WOOD.get(),
+            ModBlocks.STRIPPED_JYNWOOD_LOG.get(),
+            ModBlocks.STRIPPED_JYNWOOD_WOOD.get(),
+        )
+
+        tag(BlockTags.PLANKS).add(ModBlocks.JYNWOOD_PLANKS.get())
+        tag(BlockTags.WOODEN_SLABS).add(ModBlocks.JYNWOOD_SLAB.get())
+        tag(BlockTags.WOODEN_STAIRS).add(ModBlocks.JYNWOOD_STAIRS.get())
+        tag(BlockTags.WOODEN_FENCES).add(ModBlocks.JYNWOOD_FENCE.get())
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.JYNWOOD_FENCE_GATE.get())
+        tag(BlockTags.WOODEN_DOORS).add(ModBlocks.JYNWOOD_DOOR.get())
+        tag(BlockTags.WOODEN_TRAPDOORS).add(ModBlocks.JYNWOOD_TRAPDOOR.get())
+        tag(BlockTags.WOODEN_BUTTONS).add(ModBlocks.JYNWOOD_BUTTON.get())
+        tag(BlockTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.JYNWOOD_PRESSURE_PLATE.get())
+        tag(BlockTags.LEAVES).add(ModBlocks.JYNWOOD_LEAVES.get())
+        tag(BlockTags.SAPLINGS).add(ModBlocks.JYNWOOD_SAPLING.get())
     }
 }

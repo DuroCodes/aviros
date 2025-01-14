@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "aviros:stripped_jynwood_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "aviros:jynwood_planks"
+  }
+}

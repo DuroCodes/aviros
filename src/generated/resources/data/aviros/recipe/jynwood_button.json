@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "jynwood",
+  "ingredients": [
+    "aviros:jynwood_planks"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aviros:jynwood_button"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jynwood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aviros:jynwood_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aviros:jynwood_planks_from_stripped_jynwood_log"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jynwood_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aviros:jynwood_planks_from_stripped_jynwood_log"
+    ]
+  }
+}

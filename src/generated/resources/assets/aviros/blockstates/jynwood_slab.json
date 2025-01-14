@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aviros:block/jynwood_slab"
+    },
+    "type=double": {
+      "model": "aviros:block/jynwood_planks"
+    },
+    "type=top": {
+      "model": "aviros:block/jynwood_slab_top"
+    }
+  }
+}

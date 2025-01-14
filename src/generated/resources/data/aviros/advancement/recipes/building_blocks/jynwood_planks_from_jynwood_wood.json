@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jynwood_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "aviros:jynwood_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aviros:jynwood_planks_from_jynwood_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jynwood_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aviros:jynwood_planks_from_jynwood_wood"
+    ]
+  }
+}

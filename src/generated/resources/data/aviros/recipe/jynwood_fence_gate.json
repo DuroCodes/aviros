@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "jynwood",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "aviros:jynwood_planks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aviros:jynwood_fence_gate"
+  }
+}

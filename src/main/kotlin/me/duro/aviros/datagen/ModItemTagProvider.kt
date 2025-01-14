@@ -1,6 +1,7 @@
 package me.duro.aviros.datagen
 
 import me.duro.aviros.Aviros
+import me.duro.aviros.block.ModBlocks
 import me.duro.aviros.item.ModItems
 import me.duro.aviros.util.ModTags
 import net.minecraft.core.HolderLookup
@@ -39,5 +40,18 @@ class ModItemTagProvider(
             ModItems.SKYRITE_HOE.get()
         )
         tag(ModTags.Items.SKYRITE_REPAIR).add(ModItems.SKYRITE.get())
+
+        tag(ItemTags.LOGS_THAT_BURN).add(
+            ModBlocks.JYNWOOD_LOG.get().asItem(),
+            ModBlocks.JYNWOOD_WOOD.get().asItem(),
+            ModBlocks.STRIPPED_JYNWOOD_LOG.get().asItem(),
+            ModBlocks.STRIPPED_JYNWOOD_WOOD.get().asItem()
+        )
+        tag(ItemTags.PLANKS).add(ModBlocks.JYNWOOD_PLANKS.get().asItem())
+        tag(ItemTags.WOODEN_SLABS).add(ModBlocks.JYNWOOD_SLAB.get().asItem())
+        tag(ItemTags.WOODEN_STAIRS).add(ModBlocks.JYNWOOD_STAIRS.get().asItem())
+        tag(ItemTags.WOODEN_FENCES).add(ModBlocks.JYNWOOD_FENCE.get().asItem())
+        tag(ItemTags.FENCE_GATES).add(ModBlocks.JYNWOOD_FENCE_GATE.get().asItem())
+        tag(ItemTags.WOODEN_DOORS).add(ModBlocks.JYNWOOD_DOOR.get().asItem())
     }
 }

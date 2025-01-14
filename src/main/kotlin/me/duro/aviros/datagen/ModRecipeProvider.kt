@@ -42,6 +42,48 @@ class ModRecipeProvider(lookupProvider: HolderLookup.Provider, output: RecipeOut
             100,
             "skyrite"
         )
+
+        shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_PLANKS, 4).requires(ModBlocks.JYNWOOD_LOG)
+            .unlockedBy("has_jynwood_log", has(ModBlocks.JYNWOOD_LOG))
+            .save(output, "${Aviros.MOD_ID}:jynwood_planks_from_jynwood_log")
+        shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_PLANKS, 4).requires(ModBlocks.STRIPPED_JYNWOOD_LOG)
+            .unlockedBy("has_jynwood_log", has(ModBlocks.JYNWOOD_LOG))
+            .save(output, "${Aviros.MOD_ID}:jynwood_planks_from_stripped_jynwood_log")
+        shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_PLANKS, 4).requires(ModBlocks.JYNWOOD_WOOD)
+            .unlockedBy("has_jynwood_wood", has(ModBlocks.JYNWOOD_WOOD))
+            .save(output, "${Aviros.MOD_ID}:jynwood_planks_from_jynwood_wood")
+        shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_PLANKS, 4).requires(ModBlocks.STRIPPED_JYNWOOD_WOOD)
+            .unlockedBy("has_jynwood_wood", has(ModBlocks.JYNWOOD_WOOD))
+            .save(output, "${Aviros.MOD_ID}:jynwood_planks_from_stripped_jynwood_wood")
+
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModBlocks.JYNWOOD_WOOD
+        ).pattern("##").pattern("##").define('#', ModBlocks.JYNWOOD_LOG)
+            .unlockedBy("has_jynwood_log", has(ModItems.SKYRITE)).save(output)
+
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModBlocks.STRIPPED_JYNWOOD_WOOD
+        ).pattern("##").pattern("##").define('#', ModBlocks.STRIPPED_JYNWOOD_LOG)
+            .unlockedBy("has_stripped_jynwood_log", has(ModBlocks.STRIPPED_JYNWOOD_LOG)).save(output)
+
+        stairBuilder(ModBlocks.JYNWOOD_STAIRS, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)).group("jynwood")
+            .unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+        slabBuilder(
+            RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_SLAB, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)
+        ).group("jynwood").unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+        buttonBuilder(ModBlocks.JYNWOOD_BUTTON, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)).group("jynwood")
+            .unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+        fenceBuilder(ModBlocks.JYNWOOD_FENCE, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)).group("jynwood")
+            .unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+        fenceGateBuilder(ModBlocks.JYNWOOD_FENCE_GATE, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)).group("jynwood")
+            .unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+        doorBuilder(ModBlocks.JYNWOOD_DOOR, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)).group("jynwood")
+            .unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+        trapdoorBuilder(ModBlocks.JYNWOOD_TRAPDOOR, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)).group("jynwood")
+            .unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+        pressurePlateBuilder(
+            RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_PRESSURE_PLATE, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)
+        ).group("jynwood")
     }
 
     override fun <T : AbstractCookingRecipe?> oreCooking(

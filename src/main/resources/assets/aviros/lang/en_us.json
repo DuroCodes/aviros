@@ -1,5 +1,6 @@
 {
   "itemGroup.aviros": "Aviros",
+  "creativetab.aviros.aviros_items": "Aviros",
   "item.aviros.skyrite": "Skyrite",
   "item.aviros.skyrite_axe": "Skyrite Axe",
   "item.aviros.skyrite_hoe": "Skyrite Hoe",
@@ -13,5 +14,18 @@
   "block.aviros.skyrite_ore": "Skyrite Ore",
   "block.aviros.deepslate_skyrite_ore": "Deepslate Skyrite Ore",
   "block.aviros.skyrite_block": "Block of Skyrite",
-  "creativetab.aviros.aviros_items": "Aviros"
+  "block.aviros.jynwood_log": "Jynwood Log",
+  "block.aviros.jynwood_wood": "Jynwood Wood",
+  "block.aviros.stripped_jynwood_log": "Stripped Jynwood Log",
+  "block.aviros.stripped_jynwood_wood": "Stripped Jynwood Wood",
+  "block.aviros.jynwood_planks": "Jynwood Planks",
+  "block.aviros.jynwood_stairs": "Jynwood Stairs",
+  "block.aviros.jynwood_slab": "Jynwood Slab",
+  "block.aviros.jynwood_fence": "Jynwood Fence",
+  "block.aviros.jynwood_fence_gate": "Jynwood Fence Gate",
+  "block.aviros.jynwood_door": "Jynwood Door",
+  "block.aviros.jynwood_trapdoor": "Jynwood Trapdoor",
+  "block.aviros.jynwood_pressure_plate": "Jynwood Pressure Plate",
+  "block.aviros.jynwood_leaves": "Jynwood Leaves",
+  "block.aviros.jynwood_sapling": "Jynwood Sapling"
 }

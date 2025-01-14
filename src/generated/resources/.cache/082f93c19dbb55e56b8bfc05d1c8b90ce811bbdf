@@ -1,13 +1,20 @@
-// 1.21.4	2025-01-13T21:40:28.258763	Tags for minecraft:item mod id aviros
+// 1.21.4	2025-01-14T18:11:16.714633	Tags for minecraft:item mod id aviros
 ab7f925fed972062956368475726845262d24967 data/aviros/tags/item/skyrite_repair.json
 070169b50adede09e98fd7b93e1c289789fbaa40 data/aviros/tags/item/skyrite_tool_materials.json
 7868c8994d4212ad8859ae157ce829e27cacae7a data/minecraft/tags/item/axes.json
 b559e38c4ab619e92f5c32cd7ebfc8b4245579d4 data/minecraft/tags/item/chest_armor.json
+5493e00a397650ad377d9914708c3c2c2331ccc1 data/minecraft/tags/item/fence_gates.json
 59706719e1bb638259a960aa0f38a2c364e2fb00 data/minecraft/tags/item/foot_armor.json
 c8a60caafd148acd23295b27c37ceb487f4191d6 data/minecraft/tags/item/head_armor.json
 e9c7ef9da07b9b9290c8c7e391cdb06adaa3c653 data/minecraft/tags/item/hoes.json
 a58423eca31dedfa9fae56083a8b6bd9a1507a8a data/minecraft/tags/item/leg_armor.json
+8e2b5c4a159b542f2708c7e0e894ee3340d8d329 data/minecraft/tags/item/logs_that_burn.json
 41fcef027641092540242d9ed580239126a35410 data/minecraft/tags/item/pickaxes.json
+58df2cb98c1696fcd02c1db6568ac3a0be302896 data/minecraft/tags/item/planks.json
 bd4c2233c33bb8a9470bdfb16ab31d3517c5bb14 data/minecraft/tags/item/shovels.json
 036451b2d48f2d6134aae80662bc6c81b0b3b5ff data/minecraft/tags/item/swords.json
 ef0c81adbede5803923d26c7348e4812217b6515 data/minecraft/tags/item/trimmable_armor.json
+91da75f19f253cdb4a5735856c842e46558ed354 data/minecraft/tags/item/wooden_doors.json
+c68745ff8e1477fa8bcfd8bde7e29673614f46cc data/minecraft/tags/item/wooden_fences.json
+3268991f94c87965f5d0b3f2352defa106dd350d data/minecraft/tags/item/wooden_slabs.json
+99e005f59b719310646093882edf760de19bd4db data/minecraft/tags/item/wooden_stairs.json
