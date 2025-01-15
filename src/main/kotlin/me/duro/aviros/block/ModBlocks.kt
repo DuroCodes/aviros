@@ -5,6 +5,7 @@ import me.duro.aviros.block.custom.FlammableLeaves
 import me.duro.aviros.block.custom.FlammablePlanks
 import me.duro.aviros.block.custom.ModFlammableRotatedPillarBlock
 import me.duro.aviros.item.ModItems
+import me.duro.aviros.worldgen.tree.ModTreeGrowers
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
@@ -99,7 +100,7 @@ object ModBlocks {
 
     val JYNWOOD_SAPLING = registerBlock(
         "jynwood_sapling", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)
-    ) { SaplingBlock(null, it) }
+    ) { SaplingBlock(ModTreeGrowers.JYNWOOD, it) }
 
     private fun addResourceKey(name: String, properties: BlockBehaviour.Properties) = properties.setId(
         ResourceKey.create(

@@ -1,0 +1,7 @@
+// 1.21.4	2025-01-15T16:20:32.823004	Registries
+4172ed64f0390ccb2c88269d976a7cad7b4bebb0 data/aviros/neoforge/biome_modifier/add_skyrite_ore.json
+e6529704cdf87eb17694204f5bd8bc2ba41e2cb0 data/aviros/neoforge/biome_modifier/add_tree_jynwood.json
+db05163680e76a4fab48ba67a13863c7149cb3fa data/aviros/worldgen/configured_feature/jynwood.json
+e09ec9295d33339da307373e689ddc6ab0c19897 data/aviros/worldgen/configured_feature/skyrite_ore.json
+a79cd005ec9ba280eb1fe43efa75696c0448764d data/aviros/worldgen/placed_feature/jynwood_placed.json
+3a1c829c22c8b0883a3eb9910101c120ae4628db data/aviros/worldgen/placed_feature/skyrite_ore_placed.json
