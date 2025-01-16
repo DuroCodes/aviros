@@ -4,6 +4,7 @@ import me.duro.aviros.Aviros
 import me.duro.aviros.block.custom.FlammableLeaves
 import me.duro.aviros.block.custom.FlammablePlanks
 import me.duro.aviros.block.custom.ModFlammableRotatedPillarBlock
+import me.duro.aviros.block.custom.ModPortalBlock
 import me.duro.aviros.item.ModItems
 import me.duro.aviros.worldgen.tree.ModTreeGrowers
 import net.minecraft.core.registries.Registries
@@ -101,6 +102,13 @@ object ModBlocks {
     val JYNWOOD_SAPLING = registerBlock(
         "jynwood_sapling", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)
     ) { SaplingBlock(ModTreeGrowers.JYNWOOD, it) }
+
+    val AVIROS_PORTAL = registerBlock(
+        "aviros_portal",
+        BlockBehaviour.Properties.of().sound(SoundType.GLASS).noOcclusion().strength(2f).requiresCorrectToolForDrops()
+            .lightLevel { 15 },
+        ::ModPortalBlock
+    )
 
     private fun addResourceKey(name: String, properties: BlockBehaviour.Properties) = properties.setId(
         ResourceKey.create(

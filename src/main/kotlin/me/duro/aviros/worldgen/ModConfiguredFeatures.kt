@@ -2,6 +2,7 @@ package me.duro.aviros.worldgen
 
 import me.duro.aviros.Aviros
 import me.duro.aviros.block.ModBlocks
+import net.minecraft.core.Holder
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.worldgen.BootstrapContext
 import net.minecraft.resources.ResourceKey
@@ -52,10 +53,10 @@ object ModConfiguredFeatures {
         )
     )
 
-    fun <FC : FeatureConfiguration, F : Feature<FC>> register(
+    private fun <FC : FeatureConfiguration, F : Feature<FC>> register(
         context: BootstrapContext<ConfiguredFeature<*, *>>,
         key: ResourceKey<ConfiguredFeature<*, *>>,
         feature: F,
         configuration: FC
-    ) = context.register(key, ConfiguredFeature(feature, configuration))
+    ): Holder.Reference<ConfiguredFeature<*, *>> = context.register(key, ConfiguredFeature(feature, configuration))
 }

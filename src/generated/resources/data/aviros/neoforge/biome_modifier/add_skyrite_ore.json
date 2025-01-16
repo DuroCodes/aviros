@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": "aviros:jynwood_fields",
   "features": "aviros:skyrite_ore_placed",
   "step": "underground_ores"
 }

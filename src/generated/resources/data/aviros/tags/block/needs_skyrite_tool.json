@@ -1,5 +1,6 @@
 {
   "values": [
+    "aviros:aviros_portal",
     "#minecraft:needs_stone_tool"
   ]
 }

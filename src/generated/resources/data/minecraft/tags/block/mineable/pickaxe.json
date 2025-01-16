@@ -2,6 +2,7 @@
   "values": [
     "aviros:skyrite_block",
     "aviros:skyrite_ore",
-    "aviros:deepslate_skyrite_ore"
+    "aviros:deepslate_skyrite_ore",
+    "aviros:aviros_portal"
   ]
 }

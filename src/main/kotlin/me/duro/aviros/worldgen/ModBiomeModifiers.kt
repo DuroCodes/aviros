@@ -1,6 +1,7 @@
 package me.duro.aviros.worldgen
 
 import me.duro.aviros.Aviros
+import me.duro.aviros.worldgen.biome.ModBiomes
 import net.minecraft.core.HolderSet
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.worldgen.BootstrapContext
@@ -23,7 +24,7 @@ object ModBiomeModifiers {
 
         context.register(
             ADD_SKYRITE_ORE, BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.JYNWOOD_FIELDS)), // should prob be a BiomeTag for aviros
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SKYRITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
             )
@@ -31,7 +32,7 @@ object ModBiomeModifiers {
 
         context.register(
             ADD_TREE_JYNWOOD, BiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS)),
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.JYNWOOD_FIELDS)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.JYNWOOD_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION
             )

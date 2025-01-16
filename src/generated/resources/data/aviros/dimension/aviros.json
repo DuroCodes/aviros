@@ -1,0 +1,11 @@
+{
+  "type": "aviros:aviros_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "aviros:jynwood_fields"
+    },
+    "settings": "minecraft:floating_islands"
+  }
+}

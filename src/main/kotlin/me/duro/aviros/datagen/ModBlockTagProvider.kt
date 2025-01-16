@@ -19,6 +19,9 @@ class ModBlockTagProvider(
         tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.SKYRITE_BLOCK.get()).add(ModBlocks.SKYRITE_ORE.get())
             .add(ModBlocks.DEEPSLATE_SKYRITE_ORE.get())
 
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.AVIROS_PORTAL.get())
+        tag(ModTags.Blocks.NEEDS_SKYRITE_TOOL).add(ModBlocks.AVIROS_PORTAL.get())
+
         tag(ModTags.Blocks.NEEDS_SKYRITE_TOOL).addTags(BlockTags.NEEDS_STONE_TOOL)
         tag(ModTags.Blocks.INCORRECT_SKYRITE_TOOL).addTags(BlockTags.INCORRECT_FOR_STONE_TOOL)
             .remove(ModTags.Blocks.NEEDS_SKYRITE_TOOL)

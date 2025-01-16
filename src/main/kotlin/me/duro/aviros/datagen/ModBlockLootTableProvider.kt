@@ -32,6 +32,8 @@ class ModBlockLootTableProvider(
         add(ModBlocks.JYNWOOD_LEAVES.get()) {
             createLeavesDrops(it, ModBlocks.JYNWOOD_SAPLING.get(), *NORMAL_LEAVES_SAPLING_CHANCES)
         }
+
+        dropSelf(ModBlocks.AVIROS_PORTAL.get())
     }
 
     override fun getKnownBlocks() = ModBlocks.REGISTRY.entries.map { it.value() }

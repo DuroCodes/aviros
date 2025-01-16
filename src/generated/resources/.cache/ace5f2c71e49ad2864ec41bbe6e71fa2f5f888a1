@@ -1,4 +1,5 @@
-// 1.21.4	2025-01-14T18:27:30.284223	Model Definitions - aviros
+// 1.21.4	2025-01-15T18:50:03.385512	Model Definitions - aviros
+28cf49310ce716e6f84d93a7ae2778a7119a2f41 assets/aviros/blockstates/aviros_portal.json
 b4d578effc09042a7c45020e7f71ca8a2d5f4b65 assets/aviros/blockstates/deepslate_skyrite_ore.json
 2c2b575e6e04ba0cd69704b8f1b7c3dab8e3a545 assets/aviros/blockstates/jynwood_button.json
 b8341f044d3e3f3e6f4887f1d9f18c3d7f7bf90e assets/aviros/blockstates/jynwood_door.json
@@ -17,6 +18,7 @@ e63e391a1cdb98a9e85e0b0da3f2f03aabb62274 assets/aviros/blockstates/skyrite_block
 d2386c816243ebcd250ba06fea3907a2231c23f3 assets/aviros/blockstates/skyrite_ore.json
 beec5745f2d2f9b9d81b251848ad52cefc4e9062 assets/aviros/blockstates/stripped_jynwood_log.json
 8fc95d7f387838509cc97ec0c8c0e42a7b18ddbc assets/aviros/blockstates/stripped_jynwood_wood.json
+bf77280fc7f1a44d3fc0101de518fcce4960344b assets/aviros/items/aviros_portal.json
 f067ead3340881a574b9c7222d96bd6ae5858575 assets/aviros/items/deepslate_skyrite_ore.json
 609831286cae392553a5ff18737295f7cb30419e assets/aviros/items/jynwood_button.json
 3cb0a0ed050bcdf482f703ab9769b37178eaf289 assets/aviros/items/jynwood_door.json
@@ -45,6 +47,7 @@ e1ac715445ad6791707562ad973ae45e5e0b9110 assets/aviros/items/skyrite_helmet.json
 a6e06d676e2333e9d04e2f93cf44f891e17e1ad0 assets/aviros/items/skyrite_sword.json
 498683f3ba2a2a3b9da0a53754e7f7935c0599fb assets/aviros/items/stripped_jynwood_log.json
 32d66ef9f106dc2a77b7d23655e112dcd6001a36 assets/aviros/items/stripped_jynwood_wood.json
+e907cec14be29158c490b9e9798bfe0567d78f31 assets/aviros/models/block/aviros_portal.json
 2b30baec31cd959d215443fd24d7a0fdafa6a4cf assets/aviros/models/block/deepslate_skyrite_ore.json
 869651caf2dad8990473aa8dcbce4cefaf337b34 assets/aviros/models/block/jynwood_button.json
 bb9065b7f443f5025792cc9716e463341773943e assets/aviros/models/block/jynwood_button_inventory.json

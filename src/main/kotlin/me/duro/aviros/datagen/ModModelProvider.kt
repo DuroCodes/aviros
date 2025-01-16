@@ -30,6 +30,8 @@ class ModModelProvider(output: PackOutput) : ModelProvider(output, Aviros.MOD_ID
             .door(ModBlocks.JYNWOOD_DOOR.get())
             .trapdoor(ModBlocks.JYNWOOD_TRAPDOOR.get())
 
+        blockModels.createTrivialCube(ModBlocks.AVIROS_PORTAL.get())
+
         itemModels.generateFlatItem(ModItems.SKYRITE.get(), ModelTemplates.FLAT_ITEM)
         itemModels.generateFlatItem(ModItems.SKYRITE_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM)
         itemModels.generateFlatItem(ModItems.SKYRITE_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM)
