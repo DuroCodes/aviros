@@ -1,6 +1,6 @@
 {
   "values": [
     "aviros:aviros_portal",
-    "#minecraft:needs_stone_tool"
+    "#minecraft:needs_diamond_tool"
   ]
 }

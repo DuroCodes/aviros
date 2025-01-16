@@ -9,18 +9,18 @@ import net.minecraft.world.item.equipment.*
 
 object ModArmorMaterials {
     val SKYRITE = ArmorMaterial(
-        15,
+        41,
         mapOf(
-            ArmorType.BOOTS to 2,
-            ArmorType.LEGGINGS to 5,
-            ArmorType.CHESTPLATE to 6,
-            ArmorType.HELMET to 2,
-            ArmorType.BODY to 0
+            ArmorType.BOOTS to 4,
+            ArmorType.LEGGINGS to 7,
+            ArmorType.CHESTPLATE to 9,
+            ArmorType.HELMET to 4,
+            ArmorType.BODY to 11,
         ),
-        16,
-        SoundEvents.ARMOR_EQUIP_IRON,
-        0f,
-        0f,
+        15,
+        SoundEvents.ARMOR_EQUIP_NETHERITE,
+        3.0f,
+        0.1f,
         ModTags.Items.SKYRITE_REPAIR,
         ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(Aviros.MOD_ID, "skyrite"))
     )

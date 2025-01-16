@@ -3,6 +3,6 @@
     "#aviros:needs_skyrite_tool"
   ],
   "values": [
-    "#minecraft:incorrect_for_stone_tool"
+    "#minecraft:incorrect_for_diamond_tool"
   ]
 }

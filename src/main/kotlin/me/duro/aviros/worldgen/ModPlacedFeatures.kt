@@ -26,9 +26,9 @@ object ModPlacedFeatures {
         register(
             context,
             SKYRITE_ORE_PLACED_KEY,
-            configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SKYRITE_ORE_KEY),
-            ModOrePlacement.commonOrePlacement(
-                12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))
+            configuredFeatures.getOrThrow(ModConfiguredFeatures.AVIROS_SKYRITE_ORE_KEY),
+            ModOrePlacement.rareOrePlacement(
+                100, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))
             )
         )
 
@@ -36,8 +36,9 @@ object ModPlacedFeatures {
             context,
             JYNWOOD_PLACED_KEY,
             configuredFeatures.getOrThrow(ModConfiguredFeatures.JYNWOOD_KEY),
-            VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
-                ModBlocks.JYNWOOD_SAPLING.get()),
+            VegetationPlacements.treePlacement(
+                PlacementUtils.countExtra(3, 0.1f, 2), ModBlocks.JYNWOOD_SAPLING.get()
+            ),
         )
     }
 
@@ -48,10 +49,10 @@ object ModPlacedFeatures {
         )
     )
 
-    fun register(
+    private fun register(
         context: BootstrapContext<PlacedFeature>,
         key: ResourceKey<PlacedFeature>,
         configuration: Holder<ConfiguredFeature<*, *>>,
-        modifiers: List<PlacementModifier>
-    ) = context.register(key, PlacedFeature(configuration, modifiers))
+        modifiers: List<PlacementModifier>,
+    ): Holder.Reference<PlacedFeature> = context.register(key, PlacedFeature(configuration, modifiers))
 }

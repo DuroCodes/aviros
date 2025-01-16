@@ -44,7 +44,7 @@ object ModDimensions {
             384,
             256,
             BlockTags.INFINIBURN_OVERWORLD,
-            BuiltinDimensionTypes.OVERWORLD_EFFECTS,
+            BuiltinDimensionTypes.END_EFFECTS,
             1f,
             DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)
         )

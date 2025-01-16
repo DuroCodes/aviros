@@ -21,19 +21,19 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlace
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest
 
 object ModConfiguredFeatures {
-    val OVERWORLD_SKYRITE_ORE_KEY = registerKey("skyrite_ore")
+    val AVIROS_SKYRITE_ORE_KEY = registerKey("skyrite_ore")
     val JYNWOOD_KEY = registerKey("jynwood")
 
     fun bootstrap(context: BootstrapContext<ConfiguredFeature<*, *>>) {
         val stoneReplaceables = TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES)
         val deepslateReplaceables = TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES)
 
-        val overworldSkyriteOres = listOf(
+        val avirosSkyriteOres = listOf(
             OreConfiguration.target(stoneReplaceables, ModBlocks.SKYRITE_ORE.get().defaultBlockState()),
             OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_SKYRITE_ORE.get().defaultBlockState()),
         )
 
-        register(context, OVERWORLD_SKYRITE_ORE_KEY, Feature.ORE, OreConfiguration(overworldSkyriteOres, 9))
+        register(context, AVIROS_SKYRITE_ORE_KEY, Feature.ORE, OreConfiguration(avirosSkyriteOres, 9))
         register(
             context, JYNWOOD_KEY, Feature.TREE, TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.JYNWOOD_LOG.get()),
@@ -57,6 +57,6 @@ object ModConfiguredFeatures {
         context: BootstrapContext<ConfiguredFeature<*, *>>,
         key: ResourceKey<ConfiguredFeature<*, *>>,
         feature: F,
-        configuration: FC
+        configuration: FC,
     ): Holder.Reference<ConfiguredFeature<*, *>> = context.register(key, ConfiguredFeature(feature, configuration))
 }

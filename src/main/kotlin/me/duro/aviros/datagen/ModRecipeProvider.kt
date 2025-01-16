@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.Registries
 import net.minecraft.data.PackOutput
 import net.minecraft.data.recipes.*
+import net.minecraft.world.item.Items
 import net.minecraft.world.item.crafting.AbstractCookingRecipe
 import net.minecraft.world.item.crafting.Ingredient
 import net.minecraft.world.item.crafting.RecipeSerializer
@@ -42,6 +43,21 @@ class ModRecipeProvider(lookupProvider: HolderLookup.Provider, output: RecipeOut
             100,
             "skyrite"
         )
+
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModItems.JYNWOOD_ROD, 4
+        ).pattern("  #").pattern(" # ").pattern("#  ").define('#', ModBlocks.JYNWOOD_PLANKS)
+            .unlockedBy("has_jynwood_planks", has(ModBlocks.JYNWOOD_PLANKS)).save(output)
+
+        pickaxeRecipe(RecipeCategory.TOOLS, ModItems.SKYRITE_PICKAXE, ModItems.SKYRITE)
+        axeRecipe(RecipeCategory.TOOLS, ModItems.SKYRITE_AXE, ModItems.SKYRITE)
+        hoeRecipe(RecipeCategory.TOOLS, ModItems.SKYRITE_HOE, ModItems.SKYRITE)
+        shovelRecipe(RecipeCategory.TOOLS, ModItems.SKYRITE_SHOVEL, ModItems.SKYRITE)
+        swordRecipe(RecipeCategory.COMBAT, ModItems.SKYRITE_SWORD, ModItems.SKYRITE)
+        helmetRecipe(RecipeCategory.COMBAT, ModItems.SKYRITE_HELMET, ModItems.SKYRITE)
+        chestplateRecipe(RecipeCategory.COMBAT, ModItems.SKYRITE_CHESTPLATE, ModItems.SKYRITE)
+        leggingsRecipe(RecipeCategory.COMBAT, ModItems.SKYRITE_LEGGINGS, ModItems.SKYRITE)
+        bootsRecipe(RecipeCategory.COMBAT, ModItems.SKYRITE_BOOTS, ModItems.SKYRITE)
 
         shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_PLANKS, 4).requires(ModBlocks.JYNWOOD_LOG)
             .unlockedBy("has_jynwood_log", has(ModBlocks.JYNWOOD_LOG))
@@ -84,6 +100,12 @@ class ModRecipeProvider(lookupProvider: HolderLookup.Provider, output: RecipeOut
         pressurePlateBuilder(
             RecipeCategory.BUILDING_BLOCKS, ModBlocks.JYNWOOD_PRESSURE_PLATE, Ingredient.of(ModBlocks.JYNWOOD_PLANKS)
         ).group("jynwood")
+
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModBlocks.AVIROS_PORTAL
+        ).pattern("NNN").pattern("NSN").pattern("NNN").define('N', Items.NETHERITE_INGOT).define('S', Items.NETHER_STAR)
+            .unlockedBy("has_netherite_ingot", has(Items.NETHERITE_INGOT))
+            .unlockedBy("has_nether_star", has(Items.NETHER_STAR)).save(output)
     }
 
     override fun <T : AbstractCookingRecipe?> oreCooking(
@@ -95,7 +117,7 @@ class ModRecipeProvider(lookupProvider: HolderLookup.Provider, output: RecipeOut
         experience: Float,
         cookingTime: Int,
         group: String,
-        suffix: String
+        suffix: String,
     ) {
         ingredients.forEach {
             SimpleCookingRecipeBuilder.generic(
@@ -105,8 +127,63 @@ class ModRecipeProvider(lookupProvider: HolderLookup.Provider, output: RecipeOut
         }
     }
 
+    private fun pickaxeRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("###").pattern(" S ").pattern(" S ").define('#', ingredient).define('S', ModItems.JYNWOOD_ROD)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun axeRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("##").pattern("#S").pattern(" S").define('#', ingredient).define('S', ModItems.JYNWOOD_ROD)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun hoeRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("##").pattern(" S").pattern(" S").define('#', ingredient).define('S', ModItems.JYNWOOD_ROD)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun shovelRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("#").pattern("S").pattern("S").define('#', ingredient).define('S', ModItems.JYNWOOD_ROD)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun swordRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("#").pattern("#").pattern("S").define('#', ingredient).define(
+            'S', ModItems.JYNWOOD_ROD
+        ).unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun helmetRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("###").pattern("# #").define('#', ingredient)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun chestplateRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("# #").pattern("###").pattern("###").define('#', ingredient)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun leggingsRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("###").pattern("# #").pattern("# #").define('#', ingredient)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
+    private fun bootsRecipe(category: RecipeCategory, result: ItemLike, ingredient: ItemLike) =
+        ShapedRecipeBuilder.shaped(
+            registries.lookupOrThrow(Registries.ITEM), category, result
+        ).pattern("# #").pattern("# #").define('#', ingredient)
+            .unlockedBy("has_" + getItemName(ingredient), has(ingredient)).save(output)
+
     class Runner(
-        output: PackOutput, provider: CompletableFuture<HolderLookup.Provider>
+        output: PackOutput, provider: CompletableFuture<HolderLookup.Provider>,
     ) : RecipeProvider.Runner(output, provider) {
         override fun createRecipeProvider(provider: HolderLookup.Provider, output: RecipeOutput) =
             ModRecipeProvider(provider, output)

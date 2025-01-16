@@ -1,11 +1,11 @@
-// 1.21.4	2025-01-15T19:36:05.35273	Tags for minecraft:block mod id aviros
-a691f8e76f5b8dfd7728773095889ca0312ea96e data/aviros/tags/block/incorrect_skyrite_tool.json
-c1ee953d998193ef91bbd5e65fec9ac5d46a1ecf data/aviros/tags/block/needs_skyrite_tool.json
+// 1.21.4	2025-01-15T21:39:40.491108	Tags for minecraft:block mod id aviros
+4053470416c6e078d2803b70aedcb5ba23f3bce4 data/aviros/tags/block/incorrect_skyrite_tool.json
+446dc0e4fffb662f7c73da7e08838a3ff28dd01e data/aviros/tags/block/needs_skyrite_tool.json
 5493e00a397650ad377d9914708c3c2c2331ccc1 data/minecraft/tags/block/fence_gates.json
 9d1e3cd94e0537fb66604d86dce36d392201a130 data/minecraft/tags/block/leaves.json
 8e2b5c4a159b542f2708c7e0e894ee3340d8d329 data/minecraft/tags/block/logs_that_burn.json
 6c7a638b577b9b09f9c9468bf453b85b427a225a data/minecraft/tags/block/mineable/pickaxe.json
-b8bcda17d3074255d8ae8d958a37b834281f11ec data/minecraft/tags/block/needs_stone_tool.json
+b8bcda17d3074255d8ae8d958a37b834281f11ec data/minecraft/tags/block/needs_diamond_tool.json
 58df2cb98c1696fcd02c1db6568ac3a0be302896 data/minecraft/tags/block/planks.json
 a3045affabc9149f06ba9b0fe130d357d3df8a2f data/minecraft/tags/block/saplings.json
 debb2dcffc794fde4cfb053c637f1e9f94a0b92c data/minecraft/tags/block/wooden_buttons.json

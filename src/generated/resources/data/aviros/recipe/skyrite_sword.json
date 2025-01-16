@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "aviros:skyrite",
+    "S": "aviros:jynwood_rod"
+  },
+  "pattern": [
+    "#",
+    "#",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aviros:skyrite_sword"
+  }
+}

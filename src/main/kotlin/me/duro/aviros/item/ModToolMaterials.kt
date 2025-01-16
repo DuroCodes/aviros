@@ -5,5 +5,5 @@ import net.minecraft.world.item.ToolMaterial
 
 object ModToolMaterials {
     val SKYRITE =
-        ToolMaterial(ModTags.Blocks.INCORRECT_SKYRITE_TOOL, 250, 6.0f, 2.0f, 14, ModTags.Items.SKYRITE_REPAIR)
+        ToolMaterial(ModTags.Blocks.INCORRECT_SKYRITE_TOOL, 2031, 10.0f, 5.0f, 15, ModTags.Items.SKYRITE_REPAIR)
 }

@@ -38,11 +38,12 @@ class ModModelProvider(output: PackOutput) : ModelProvider(output, Aviros.MOD_ID
         itemModels.generateFlatItem(ModItems.SKYRITE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM)
         itemModels.generateFlatItem(ModItems.SKYRITE_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM)
         itemModels.generateFlatItem(ModItems.SKYRITE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM)
+        itemModels.generateFlatItem(ModItems.JYNWOOD_ROD.get(), ModelTemplates.FLAT_ITEM)
 
-        itemModels.generateTrimmableItem(ModItems.SKYRITE_HELMET.get(), EquipmentAssets.IRON, "helmet", false)
-        itemModels.generateTrimmableItem(ModItems.SKYRITE_CHESTPLATE.get(), EquipmentAssets.IRON, "chestplate", false)
-        itemModels.generateTrimmableItem(ModItems.SKYRITE_LEGGINGS.get(), EquipmentAssets.IRON, "leggings", false)
-        itemModels.generateTrimmableItem(ModItems.SKYRITE_BOOTS.get(), EquipmentAssets.IRON, "boots", false)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_HELMET.get(), EquipmentAssets.NETHERITE, "helmet", false)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_CHESTPLATE.get(), EquipmentAssets.NETHERITE, "chestplate", false)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_LEGGINGS.get(), EquipmentAssets.NETHERITE, "leggings", false)
+        itemModels.generateTrimmableItem(ModItems.SKYRITE_BOOTS.get(), EquipmentAssets.NETHERITE, "boots", false)
     }
 }
 
