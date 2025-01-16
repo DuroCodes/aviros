@@ -1,6 +1,6 @@
-// 1.21.4	2025-01-15T21:51:08.176448	Registries
+// 1.21.4	2025-01-16T00:59:11.320453	Registries
 f7cd9840db8ffd845b4319b2390c28b9ac42f58d data/aviros/dimension/aviros.json
-a78edb623e09a9ed4fe958e766fc9eaa563555d1 data/aviros/dimension_type/aviros_type.json
+7759d965fa22bc3ffa25c03ed4416063212a7d85 data/aviros/dimension_type/aviros_type.json
 8dce16909887d75c2f0aeda50f4a34ffdcd8d10e data/aviros/neoforge/biome_modifier/add_skyrite_ore.json
 9b6ca60a158d0e48bc7ee6ecf81b3972b803fcbb data/aviros/neoforge/biome_modifier/add_tree_jynwood.json
 bb63580c71b66bbd3d4daa943fc98f72a93f0622 data/aviros/worldgen/biome/jynwood_fields.json
